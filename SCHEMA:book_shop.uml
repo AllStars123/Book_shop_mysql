@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>ff26727a-732f-481e-ab15-b86af83f2e62.SCHEMA:book_shop</OriginalElement>
+  <nodes>
+    <node x="725.0" y="717.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books_Authors</node>
+    <node x="407.11585365853654" y="150.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Staff</node>
+    <node x="771.4908536585365" y="205.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Publishers</node>
+    <node x="1128.7408536585365" y="456.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases</node>
+    <node x="488.99999999999994" y="706.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Storage</node>
+    <node x="343.0" y="895.0">ff26727a-732f-481e-ab15-b86af83f2e62.VIEW:book_shop.nobody_buy</node>
+    <node x="1045.2408536585365" y="684.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases_Books</node>
+    <node x="229.99999999999994" y="695.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Providers_List</node>
+    <node x="1182.9908536585365" y="183.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Customers</node>
+    <node x="488.49999999999994" y="456.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books</node>
+    <node x="141.37499999999994" y="227.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Genres</node>
+    <node x="887.7408536585365" y="489.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Authors</node>
+    <node x="402.61585365853654" y="0.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Staff_Positions</node>
+    <node x="0.0" y="684.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Orders</node>
+    <node x="145.96341463414632" y="434.0">ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Providers</node>
+    <node x="0.0" y="895.0">ff26727a-732f-481e-ab15-b86af83f2e62.VIEW:book_shop.delivery_amount</node>
+    <node x="542.0" y="895.0">ff26727a-732f-481e-ab15-b86af83f2e62.VIEW:book_shop.count_genres</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Orders" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Providers" relationship="REFERENCES">
+      <point x="0.0" y="-83.0" />
+      <point x="105.0" y="663.0" />
+      <point x="256.9634146341463" y="663.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Customers" relationship="REFERENCES">
+      <point x="54.25" y="-72.0" />
+      <point x="0.0" y="83.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books_Authors" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" relationship="REFERENCES">
+      <point x="-61.5" y="-50.0" />
+      <point x="786.5" y="653.0" />
+      <point x="597.0" y="653.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books_Authors" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Authors" relationship="REFERENCES">
+      <point x="61.5" y="-50.0" />
+      <point x="909.5" y="643.0" />
+      <point x="986.7408536585365" y="643.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Orders" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Staff" relationship="REFERENCES">
+      <point x="-70.0" y="-83.0" />
+      <point x="35.0" y="663.0" />
+      <point x="69.34756097560967" y="663.0" />
+      <point x="69.34756097560967" y="413.0" />
+      <point x="514.1158536585365" y="413.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Staff" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Staff_Positions" relationship="REFERENCES">
+      <point x="0.0" y="-116.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Providers_List" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Providers" relationship="REFERENCES">
+      <point x="-59.75" y="-72.0" />
+      <point x="289.74999999999994" y="663.0" />
+      <point x="256.9634146341463" y="663.0" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Genres" relationship="REFERENCES">
+      <point x="-54.25" y="-72.0" />
+      <point x="542.75" y="403.0" />
+      <point x="237.37499999999994" y="403.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Storage" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" relationship="REFERENCES">
+      <point x="0.0" y="-61.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Providers_List" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" relationship="REFERENCES">
+      <point x="59.75" y="-72.0" />
+      <point x="409.24999999999994" y="653.0" />
+      <point x="597.0" y="653.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Publishers" relationship="REFERENCES">
+      <point x="54.25" y="-72.0" />
+      <point x="651.25" y="403.0" />
+      <point x="879.9908536585365" y="403.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases_Books" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" relationship="REFERENCES">
+      <point x="-64.0" y="-83.0" />
+      <point x="1109.2408536585365" y="653.0" />
+      <point x="597.0" y="653.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Orders" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Books" relationship="REFERENCES">
+      <point x="70.0" y="-83.0" />
+      <point x="175.0" y="653.0" />
+      <point x="597.0" y="653.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases_Books" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases" relationship="REFERENCES">
+      <point x="64.0" y="-83.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Purchases" target="ff26727a-732f-481e-ab15-b86af83f2e62.TABLE:book_shop.Staff" relationship="REFERENCES">
+      <point x="-54.25" y="-72.0" />
+      <point x="1182.9908536585365" y="413.0" />
+      <point x="514.1158536585365" y="413.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3380281690140845" showDependencies="false" x="700.0" y="486.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
